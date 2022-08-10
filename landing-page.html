@@ -2,15 +2,100 @@
 <html>
 	<head>
 		<title>Landing Page</title>
-
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bulma - css framework based on flexbox -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 		<link rel="stylesheet" href="styles.css">
-	</head>
+	</head> 
+    <body>
+        <!-- navigation -->
+        <div class="container">
+            <div class="block">
+                <div class="navbar is-transparent" role="navigation">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="#">
+                            <img src="./assets/logo-blue-160x160-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <div class="buttons">
+                                    <a class="button">
+                                        CONTACT US
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>  
+            </div>
+            <!-- first block -->
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="block">
+                        <h1 class="title is-1">Integrated <strong>Marketing Services</strong></h1></h1>
+                        <p class="content">We turn your marketing plans into action by building on your ideas and executing initiatives alongside you and your team. Get a complete department that can pivot to different areas of marketing based on your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- second block -->
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="block">
+                        <h2 class="title is-2">We're the experts with <strong>modern</strong> marketing tools, so you don't have to be!</h2>
+                        <p class="content">With hands-on experience in B2B's most innovative apps and tools, we take a data-driven approach to continually improve prospect engagement. Whether we work directly out of your platform or provide our insights manually, you always get full visability into the process.</p>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="block">
+                        <figure class="image is-1by1">
+                            <img src="./assets/Marketing_Tools.svg" frameborder="0" class="has-ratio"></img>
+                        </figure>
+                    </div>
+                </div>
 
-	<body>
-		<!--Page Content-->
+            </div>
+            <!-- third block -->
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-half">
+                        <div class="block">
+                            <figure class="image is-1by1">
+                                <img src="./assets/Complete-Department-Marketing.png" frameborder="0" class="has-ratio"></img>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="block">
+                            <h3 class="title is-2"><strong>The best way</strong> to build a marketing team</h3>
+                            <p class="content">With EBQ, you're not just hiring a marketing specialist. You're getting an entire marketing department at a fraction of the cost and effort of hiring internally.</p>
+                            <p class="content">For each project, we provide: a Success Manager to drive high-level strategy, a Project Manager to oversee day-to-day operations, and one or more Specialists working diligently to amplify your brand.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<script type="text/javascript">
-			// Event listener JS goes here
+        <div class="container">
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <h4 class="title is-1">Looking to take your <strong>marketing to the next level?</strong></h4>
+                    <button class="button">CONTACT US</button>
+                </div> 
+            </footer>
+        </div>
+
+        <script type="text/javascript">
+            const button = document.querySelector('#button');
+
+            button.addEventListener('click', () => {
+                window.open('https://example.com', '_blank');
+            });
 		</script>
-	</body>
+
+    </body>
 </html>
