@@ -1,6 +1,48 @@
 /******* LANDING PAGE STYLES *******/
-
+/* I used !important to override Bulma's presets, I usually never use !important. If I were to use more than just css and html, I would use Bulma's webpack method to override the presets - https://bulma.io/documentation/customize/with-webpack */
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1  {
+    font-size: 48px;
+}
+
+h2  {
+    font-size: 40px;
+}
+
+#h2-footer {
+    color: #fff;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.navbar-item img {
+    max-width: 70% !important;
+    max-height: 70% !important;
+}
+
+#button {
+    background-color: #2979ed;
+    color: #fff;
+
+}
+
+#button-2 {
+    background-color: #ffbe3c;
+    color: #2979ed;
+}
+
+footer {
+    background-color: #0b459e !important;
+}
