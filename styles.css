@@ -8,6 +8,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    max-width: 100%;
 }
 
 h1  {
@@ -45,4 +46,5 @@ p {
 
 footer {
     background-color: #0b459e !important;
+    max-width: 100%;
 }
